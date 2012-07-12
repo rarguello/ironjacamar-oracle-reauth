@@ -11,25 +11,25 @@
   <description>Implements Reauth support for Ironjacamar</description>
   <repositories>
     <repository>
-      <id>jboss-eap-repository</id>
-      <name>JBoss EAP Maven Repository</name>
-      <url>http://maven.repository.redhat.com/techpreview/all/</url>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Repository Group</name>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
       <layout>default</layout>
       <releases>
         <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
       </releases>
       <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
-        </snapshots>
+      </snapshots>
     </repository>
   </repositories>
   <dependencies>
     <dependency>
       <groupId>org.jboss.ironjacamar</groupId>
       <artifactId>ironjacamar-jdbc</artifactId>
-      <version>1.0.11.Final-redhat-1</version>
+      <version>1.0.11.Final</version>
     </dependency>
   </dependencies>
 </project>
